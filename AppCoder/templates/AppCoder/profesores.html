@@ -1,0 +1,41 @@
+
+
+{% extends "AppCoder/padre.html" %}
+
+{% load static %}
+
+{% block titulo %}
+
+Esta pagina mostrara los estudiantes.
+
+
+{% endblock %}
+
+{% block formulario %}
+
+<h2>Ingresar datos del profesor:</h2>
+
+<form action="" method="POST"> {% csrf_token %}
+
+
+    <table>
+
+
+            {{pro2.as_table}}
+
+
+
+    </table>
+
+
+    <input type="submit" value="Enviar">
+
+</form>
+
+{% endblock %}
+
+
+
+
+
+   

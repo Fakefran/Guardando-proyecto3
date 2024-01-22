@@ -1,0 +1,41 @@
+
+
+{% extends "AppCoder/padre.html" %}
+
+{% load static %}
+
+{% block titulo %}
+
+Esta pagina mostrara los cursos.
+
+
+{% endblock %}
+
+{% block formulario %}
+
+<h2>Ingresar datos del curso:</h2>
+
+<form action="" method="POST"> {% csrf_token %}
+
+
+    <table>
+
+
+            {{cur2.as_table}}
+
+
+
+    </table>
+
+
+    <input type="submit" value="Enviar">
+
+</form>
+
+{% endblock %}
+
+
+
+
+
+   

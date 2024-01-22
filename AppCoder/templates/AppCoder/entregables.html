@@ -1,0 +1,49 @@
+{% extends "AppCoder/padre.html" %}
+
+{% load static %}
+
+{% block titulo %}
+
+Esta pagina mostrara los entregables.
+
+
+{% endblock %}
+
+{% block formulario %}
+
+<h2>Ingresar datos de la entrega:</h2>
+
+<form action="" method="POST"> {% csrf_token %}
+
+
+    <table>
+
+
+            {{ent2.as_table}}
+
+            
+    </table>
+
+    
+    
+    
+    <input type="submit" value="Enviar">
+    
+   
+
+</form>
+
+
+<form action="" method="POST"> {% csrf_token %}
+    <table>
+        {{ form.as_table }}
+    </table>
+   
+</form>
+{% endblock %}
+
+
+
+
+
+   
